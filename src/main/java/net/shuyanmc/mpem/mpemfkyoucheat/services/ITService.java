@@ -163,6 +163,7 @@ public class ITService implements ITransformationService {
                         }
                     } finally {
                         config.close();
+                        tmp_toml.delete();
                     }
                 }
                 if(!mixins.keySet().isEmpty()){
