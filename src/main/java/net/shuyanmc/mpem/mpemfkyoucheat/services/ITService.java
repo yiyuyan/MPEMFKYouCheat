@@ -201,19 +201,19 @@ public class ITService implements ITransformationService {
         for (String shitId : shitIds) {
             builder.append(shitId).append(",");
         }
-        if(!shitNames.isEmpty()) builder.append("Suspicious mod names: ");
+        if(!shitNames.isEmpty()) builder.append("\n").append("Suspicious mod names: ");
         for (String shitId : shitNames) {
             builder.append(shitId).append(",");
         }
-        if(!shitDesc.isEmpty()) builder.append("Suspicious mod desc: ");
+        if(!shitDesc.isEmpty()) builder.append("\n").append("Suspicious mod desc: ");
         for (String shitId : shitDesc) {
             builder.append(shitId).append(",");
         }
-        if(!shitMixins.isEmpty()) builder.append("Suspicious mod mixins: ");
+        if(!shitMixins.isEmpty()) builder.append("\n").append("Suspicious mod mixins: ");
         for (String shitId : shitMixins) {
             builder.append(shitId).append(",");
         }
-        if(!shitClasses.isEmpty()) builder.append("Suspicious mod classes: ");
+        if(!shitClasses.isEmpty()) builder.append("\n").append("Suspicious mod classes: ");
         for (String shitId : shitClasses) {
             builder.append(shitId).append(",");
         }
