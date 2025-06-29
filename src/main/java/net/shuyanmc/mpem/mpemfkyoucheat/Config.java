@@ -27,6 +27,10 @@ public class Config {
             keywords.add("meteor");
             keywords.add("liquidbounce");
             keywords.add("impact");
+            keywords.add("hack");
+            keywords.add("cheat");
+            keywords.add("freecam");
+            keywords.add("xray");
             object.add("ids",ids);
             object.add("classes",classes);
             object.add("black_keywords",keywords);

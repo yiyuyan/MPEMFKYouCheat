@@ -231,7 +231,7 @@ public class ITService implements ITransformationService {
 
     public boolean has(String words,ArrayList<String> keywords){
         for (String keyword : keywords) {
-            return words.contains(keyword);
+            return words.toLowerCase().contains(keyword.toLowerCase());
         }
         return false;
     }
