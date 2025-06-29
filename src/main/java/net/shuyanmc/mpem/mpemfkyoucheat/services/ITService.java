@@ -192,9 +192,19 @@ public class ITService implements ITransformationService {
                         }
                     }
 
+                    boolean all = true;
                     for (String aClass : classes) {
-                        if(!packageMixin.startsWith(aClass)){
-                            shitClasses.add(packageMixin);
+                        if (packageMixin.startsWith(aClass)) {
+                            all = false;
+                            break;
+                        }
+                    }
+
+                    if(!all){
+                        for (String aClass : classes) {
+                            if(!packageMixin.startsWith(aClass)){
+                                shitClasses.add(packageMixin);
+                            }
                         }
                     }
                 }
