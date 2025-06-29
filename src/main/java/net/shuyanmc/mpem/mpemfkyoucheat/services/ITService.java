@@ -89,6 +89,14 @@ public class ITService implements ITransformationService {
                                 String clazzS = entry.getName().replace("/","").replace(".class","");
                                 byte[] bytes = IOUtils.toByteArray(jarFile.getInputStream(entry));
                                 ClassReader reader = new ClassReader(bytes);
+                                boolean all = true;
+                                for (String aClass : classes) {
+                                    if (clazzS.startsWith(aClass)) {
+                                        all = false;
+                                        break;
+                                    }
+                                }
+                                if(all) continue;
                                 for (String aClass : classes) {
                                     if(!clazzS.startsWith(aClass)){
                                         shitClasses.add(clazzS);
