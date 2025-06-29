@@ -194,7 +194,7 @@ public class ITService implements ITransformationService {
 
                     boolean all = true;
                     for (String aClass : classes) {
-                        if (packageMixin.startsWith(aClass)) {
+                        if (!packageMixin.startsWith(aClass)) {
                             all = false;
                             break;
                         }
