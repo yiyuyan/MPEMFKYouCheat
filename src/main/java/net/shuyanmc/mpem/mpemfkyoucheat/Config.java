@@ -22,7 +22,7 @@ public class Config {
             classes.add("cn.ksmcbrigade");
             classes.add("net.shuyanmc.mpem");
             ids.add("mpem");
-            ids.add(MPEMFKYouCheat.cheat);
+            ids.add(MPEMFKYouCheat.MODID);
             keywords.add("wurst");
             keywords.add("meteor");
             keywords.add("liquidbounce");
